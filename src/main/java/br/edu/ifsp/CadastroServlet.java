@@ -48,7 +48,6 @@ public class CadastroServlet extends HttpServlet {
                 List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
                 lista.add(t);
                 getServletContext().setAttribute("lista", lista);
-                System.out.println(lista.size());
             }
 
             request.setAttribute("tarefa",t);

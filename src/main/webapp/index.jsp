@@ -29,7 +29,10 @@
                     <td>${t.getId()}</td>
                     <td>${t.getNome()}</td>
                     <td>${t.getDescricao()}</td>
-                    <td>Editar</td>
+                    <td>
+                        <a href= <c:url value='/busca_tarefa?id=${t.id}'/> class="btn btn-primary">Editar </a>
+
+                    </td>
                     <td>Excluir</td>
                 </tr>
             </c:forEach>
