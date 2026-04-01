@@ -33,7 +33,12 @@
                         <a href= <c:url value='/busca_tarefa?id=${t.id}'/> class="btn btn-primary">Editar </a>
 
                     </td>
-                    <td>Excluir</td>
+                    <td>
+                        <form action="exclui_tarefa" method="post">
+                            <input type="hidden" name="id" value="${t.getId()}">
+                            <button type="submit" class="btn btn-danger">Excluir</button>
+                        </form>
+                    </td>
                 </tr>
             </c:forEach>
         </tbody>

@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 //Sempre que for uma classe servlet começar passando o nome e o value
@@ -13,6 +14,8 @@ import java.util.List;
 
 //Sempre vai ester HttpServlet
 public class EditarServlet extends HttpServlet {
+
+    public static List<Tarefa> lista = null;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -45,6 +48,10 @@ public class EditarServlet extends HttpServlet {
         String id = request.getParameter("id");
         int id_inteiro = Integer.parseInt(id);
 
+        String nomeTarefa = request.getParameter("nome_tarefa");
+        String descricaoTarefa = request.getParameter("descricao_tarefa");
+        String url = null;
+
         List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
 
         for(Tarefa t : lista){
@@ -54,6 +61,42 @@ public class EditarServlet extends HttpServlet {
             }
         }
 
+        List<String> listaMensagens = new ArrayList<>();
+
+        if(nomeTarefa.isEmpty())
+            listaMensagens.add("O campo tarefa deve ser preenchido");
+
+        if(descricaoTarefa.isEmpty())
+            listaMensagens.add("O campo descricao deve ser preenchido");
+
+        if(!listaMensagens.isEmpty()){
+            url = "/cadastro.jsp";
+            request.setAttribute("lista_mensagens", listaMensagens);
+        }else{
+            Tarefa t = new Tarefa(nomeTarefa,descricaoTarefa);
+
+            Object o = getServletContext().getAttribute("lista");
+            if(o instanceof ArrayList)
+            {
+                lista.add(t);
+                getServletContext().setAttribute("lista", lista);
+            }
+
+            request.setAttribute("tarefa",t);
+            url = "/obrigado.jsp";
+        }
+
+        getServletContext().getRequestDispatcher(url).forward(request,response);
+
+    }
+
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+        // Adicionando lista vazia no contexto de aplicação
+        lista = new ArrayList<>();
+        getServletContext().setAttribute("lista", lista);
     }
 
 }
