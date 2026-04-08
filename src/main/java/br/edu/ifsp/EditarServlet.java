@@ -8,36 +8,38 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 //Sempre que for uma classe servlet começar passando o nome e o value
-@WebServlet(name = "EditaServlet", value = "/editar_tarefa")
+@WebServlet(name = "EditaServlet", value = "/editar_noticia")
 
 //Sempre vai ester HttpServlet
 public class EditarServlet extends HttpServlet {
 
-    public static List<Tarefa> lista = null;
+    public static List<Noticia> lista = null;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         int id_inteiro = Integer.parseInt(id);
         String url = null;
-        List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
 
-        Tarefa tarefa_encontrada = null;
+        Noticia noticia_encontrada = null;
 
         for (int i=0; i<lista.size(); i++ )
         {
-            Tarefa aux = lista.get(i);
+            Noticia aux = lista.get(i);
 
             if(aux.getId() == id_inteiro)
-                tarefa_encontrada = aux;
+                noticia_encontrada = aux;
 
         }
 
         url = "/editar.jsp";
 
-        request.setAttribute("tarefa", tarefa_encontrada);
+        request.setAttribute("noticia", noticia_encontrada);
 
         getServletContext().getRequestDispatcher(url).forward(request,response);
     }
@@ -48,13 +50,20 @@ public class EditarServlet extends HttpServlet {
         String id = request.getParameter("id");
         int id_inteiro = Integer.parseInt(id);
 
-        String nomeTarefa = request.getParameter("nome_tarefa");
-        String descricaoTarefa = request.getParameter("descricao_tarefa");
+        LocalDate hoje = LocalDate.now();
+        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String dataFormatada = hoje.format(formatador);
+
+        String titulo_noticia = request.getParameter("titulo");
+        String autor_noticia = request.getParameter("autor");
+        String categoria_noticia = request.getParameter("categoria");
+        String conteudo_completo = request.getParameter("conteudo_completo");
+        String resumo = request.getParameter("resumo");
         String url = null;
 
-        List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
 
-        for(Tarefa t : lista){
+        for(Noticia t : lista){
             if(t.getId() == id_inteiro){
                 lista.remove(t);
                 break;
@@ -63,17 +72,17 @@ public class EditarServlet extends HttpServlet {
 
         List<String> listaMensagens = new ArrayList<>();
 
-        if(nomeTarefa.isEmpty())
-            listaMensagens.add("O campo tarefa deve ser preenchido");
+        if(titulo_noticia.isEmpty())
+            listaMensagens.add("O campo noticia deve ser preenchido");
 
-        if(descricaoTarefa.isEmpty())
+        if(autor_noticia.isEmpty())
             listaMensagens.add("O campo descricao deve ser preenchido");
 
         if(!listaMensagens.isEmpty()){
             url = "/cadastro.jsp";
             request.setAttribute("lista_mensagens", listaMensagens);
         }else{
-            Tarefa t = new Tarefa(nomeTarefa,descricaoTarefa);
+            Noticia t = new Noticia(titulo_noticia,autor_noticia, categoria_noticia, conteudo_completo, resumo, dataFormatada);
 
             Object o = getServletContext().getAttribute("lista");
             if(o instanceof ArrayList)
@@ -82,7 +91,7 @@ public class EditarServlet extends HttpServlet {
                 getServletContext().setAttribute("lista", lista);
             }
 
-            request.setAttribute("tarefa",t);
+            request.setAttribute("noticia",t);
             url = "/obrigado.jsp";
         }
 

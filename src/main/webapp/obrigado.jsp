@@ -5,8 +5,7 @@
 
 
 <div class="container">
-  <p class="h3"> Nome: ${tarefa.nome} </p>
-  <p class="h3"> Decricao: ${tarefa.descricao} </p>
+  <p>Noticia cadastrada</p>
 </div>
 
 <c:import url="includes/footer.jsp"/>

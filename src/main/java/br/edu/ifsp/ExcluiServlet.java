@@ -6,7 +6,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ExcluiServlet", value = "/exclui_tarefa")
+@WebServlet(name = "ExcluiServlet", value = "/exclui_noticia")
 public class ExcluiServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -18,22 +18,22 @@ public class ExcluiServlet extends HttpServlet {
         String id = request.getParameter("id");
         int id_inteiro = Integer.parseInt(id);
         String url = null;
-        List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
 
-        Tarefa tarefa_encontrada = null;
+        Noticia noticia_encontrada = null;
 
         for (int i=0; i<lista.size(); i++ )
         {
-            Tarefa aux = lista.get(i);
+            Noticia aux = lista.get(i);
 
             if(aux.getId() == id_inteiro)
-                tarefa_encontrada = aux;
+                noticia_encontrada = aux;
                 lista.remove(aux);
         }
 
         url = "/index.jsp";
 
-        //request.setAttribute("tarefa", tarefa_encontrada);
+        //request.setAttribute("noticia", noticia_encontrada);
 
         getServletContext().getRequestDispatcher(url).forward(request,response);
     }

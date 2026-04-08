@@ -9,40 +9,40 @@ import java.io.IOException;
 import java.util.List;
 
 //Sempre que for uma classe servlet começar passando o nome e o value
-@WebServlet(name = "BuscaTarefa", value = "/busca_tarefa")
+@WebServlet(name = "BuscaNoticia", value = "/busca_noticia")
 
 //Sempre vai ester HttpServlet
-public class BuscaTarefa extends HttpServlet {
+public class BuscaNoticia extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         int id_inteiro = Integer.parseInt(id);
 
         String url = null;
-        List<Tarefa> lista = (List<Tarefa>) getServletContext().getAttribute("lista");
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
 
-        Tarefa tarefa_encontrada = null;
+        Noticia noticia_encontrada = null;
 
 //        for (int i=0; i<lista.size(); i++ )
 //        {
-//            Tarefa aux = lista.get(i);
+//            Noticia aux = lista.get(i);
 //
 //            if(aux.getId() == id_inteiro)
-//                tarefa_encontrada = aux;
+//                noticia_encontrada = aux;
 //
 //        }
 
-        for(Tarefa t : lista){
+        for(Noticia t : lista){
             if(t.getId() == id_inteiro){
 
-                tarefa_encontrada = t;
+                noticia_encontrada = t;
                 break;
 
             }
         }
 
-        if(tarefa_encontrada != null){
-            request.setAttribute("tarefa", tarefa_encontrada);
+        if(noticia_encontrada != null){
+            request.setAttribute("noticia", noticia_encontrada);
             url = "/editar.jsp";
             System.out.println(url);
         }else{
