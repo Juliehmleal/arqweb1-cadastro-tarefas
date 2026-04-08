@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="CADASTRANDO NOTICIAS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -74,7 +77,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Smart Tomcat.Tomcat: arqweb1-01.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "julie.leal/ajuste__crud",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -125,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775519124947</updated>
       <workItem from="1775519126088" duration="2283000" />
-      <workItem from="1775597668606" duration="9618000" />
+      <workItem from="1775597668606" duration="14744000" />
     </task>
     <task id="LOCAL-00001" summary="alterando projeto para cadastro de noticias">
       <option name="closed" value="true" />
@@ -151,13 +154,26 @@
       <option name="project" value="LOCAL" />
       <updated>1775619785175</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CADASTRANDO NOTICIAS">
+      <option name="closed" value="true" />
+      <created>1775684084668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775684084668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="d6675521-88a0-4103-8a33-627337714972" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -197,6 +213,11 @@
             </State>
           </value>
         </entry>
+        <entry key="d6675521-88a0-4103-8a33-627337714972">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -204,5 +225,21 @@
     <MESSAGE value="alterando projeto para cadastro de noticias" />
     <MESSAGE value="CADASTRANDO NOTICIAS" />
     <option name="LAST_COMMIT_MESSAGE" value="CADASTRANDO NOTICIAS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
