@@ -14,6 +14,7 @@
             </div>
         </c:when>
 
+
         <c:otherwise>
             <%-- Criamos a linha do grid aqui --%>
             <div class="row">
