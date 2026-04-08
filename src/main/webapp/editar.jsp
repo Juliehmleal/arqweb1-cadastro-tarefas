@@ -11,10 +11,12 @@
                     <h3 class="mb-0">Editar</h3>
                 </div>
                 <div class="card-body">
-                    <form action="cadastrar_noticia" method="POST">
+                    <input value="${noticia.id}" type="hidden" name="id">
+
+                    <form action="editar_noticia" method="POST">
                         <div class="mb-3">
                             <label class="form-label">Título</label>
-                            <input type="text" class="form-control" name="titulo" value="${noticia.titulo}" required>
+                            <input type="text" class="form-control" name="titulo" value="${noticia.getTitulo()}" required>
                         </div>
 
                         <div class="mb-3">
@@ -22,24 +24,21 @@
                             <input type="text" class="form-control" name="autor" value="${noticia.autor}" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Categoria</label>
-                            <select class="form-select" name="categoria" required>
-                                <option value="">Selecione...</option>
-                                <option value="Política">Política</option>
-                                <option value="Esporte">Esporte</option>
-                                <option value="Cultura">Cultura</option>
-                            </select>
-                        </div>
+                        <select name="categoria" class="form-select mb-2">
+                            <option value="">Selecione o genêro</option>
+                            <option value="Política" ${noticia.categoria == 'Política' ? 'selected' : ''}>Política</option>
+                            <option value="Esporte" ${noticia.categoria == 'Esporte' ? 'selected' : ''}>Esporte</option>
+                            <option value="Cultura" ${noticia.categoria == 'Cultura' ? 'selected' : ''}>Cultura</option>
+                        </select>
 
                         <div class="mb-3">
                             <label class="form-label">Resumo</label>
-                            <textarea class="form-control" name="resumo" rows="3" value="${noticia.resumo}" required></textarea>
+                            <textarea class="form-control" name="resumo" rows="3" required>${noticia.resumo}</textarea>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Conteúdo</label>
-                            <textarea class="form-control" name="conteudo_completo" rows="6" required value="${noticia.conteudo}"></textarea>
+                            <textarea class="form-control" name="conteudo_completo" rows="6" required>${noticia.conteudo_completo}</textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Salvar</button>

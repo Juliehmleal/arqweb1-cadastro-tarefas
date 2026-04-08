@@ -19,37 +19,21 @@ public class EditarServlet extends HttpServlet {
 
     public static List<Noticia> lista = null;
 
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        int id_inteiro = Integer.parseInt(id);
-        String url = null;
-        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
 
-        Noticia noticia_encontrada = null;
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
-        for (int i=0; i<lista.size(); i++ )
-        {
-            Noticia aux = lista.get(i);
-
-            if(aux.getId() == id_inteiro)
-                noticia_encontrada = aux;
-
+        for (Noticia j : lista) {
+            if (String.valueOf(j.getId()).equals(id)) {
+                request.setAttribute("noticia", j);
+                break;
+            }
         }
 
-        url = "/editar.jsp";
-
-        request.setAttribute("noticia", noticia_encontrada);
-
-        if (noticia_encontrada != null) {
-            request.setAttribute("noticia", noticia_encontrada);
-            request.getRequestDispatcher("/editar.jsp").forward(request, response);
-            return;
-        }
-
-
-        // Se não achar, volta para o index
-        response.sendRedirect("index.jsp");
+        request.getRequestDispatcher("/editar.jsp").forward(request, response);
     }
 
     @Override
@@ -69,7 +53,8 @@ public class EditarServlet extends HttpServlet {
         String resumo = request.getParameter("resumo");
         String url = null;
 
-        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
+
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
         for(Noticia t : lista){
             if(t.getId() == id_inteiro){
@@ -92,12 +77,8 @@ public class EditarServlet extends HttpServlet {
         }else{
             Noticia t = new Noticia(titulo_noticia,autor_noticia, categoria_noticia, conteudo_completo, resumo, dataFormatada);
 
-            Object o = getServletContext().getAttribute("lista");
-            if(o instanceof ArrayList)
-            {
-                lista.add(t);
-                getServletContext().setAttribute("lista", lista);
-            }
+            lista.add(t);
+            getServletContext().setAttribute("listaNoticias", lista);
 
             request.setAttribute("noticia",t);
             url = "/obrigado.jsp";
