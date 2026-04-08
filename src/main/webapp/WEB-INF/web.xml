@@ -6,7 +6,9 @@
     <location>/error.html</location>
   </error-page>
   <error-page>
+    <!--
     <exception-type>java.lang.RuntimeException</exception-type>
     <location>/error.html</location>
+    -->
   </error-page>
 </web-app>

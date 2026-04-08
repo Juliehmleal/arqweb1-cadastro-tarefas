@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="alterando projeto para cadastro de noticias" />
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="alterando projeto para cadastro de noticias">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,22 +30,22 @@
     &quot;assignee&quot;: &quot;Juliehmleal&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Juliehmleal/arqweb1-cadastro-tarefas.git",
-    "accountId": "d4baf685-cd5b-45ef-9d74-df9a93d04742"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Juliehmleal/arqweb1-cadastro-tarefas.git&quot;,
+    &quot;accountId&quot;: &quot;d4baf685-cd5b-45ef-9d74-df9a93d04742&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "Juliehmleal",
-    "repository": "arqweb1-cadastro-tarefas"
+    &quot;owner&quot;: &quot;Juliehmleal&quot;,
+    &quot;repository&quot;: &quot;arqweb1-cadastro-tarefas&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/Noticia.java" root0="SKIP_INSPECTION" />
   </component>
@@ -67,7 +71,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Smart Tomcat.Tomcat: arqweb1-01.executor": "Run",
-    "git-widget-placeholder": "#2 on edita__e__excluid",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775519124947</updated>
       <workItem from="1775519126088" duration="2283000" />
-      <workItem from="1775597668606" duration="5434000" />
+      <workItem from="1775597668606" duration="6584000" />
     </task>
     <task id="LOCAL-00001" summary="alterando projeto para cadastro de noticias">
       <option name="closed" value="true" />
