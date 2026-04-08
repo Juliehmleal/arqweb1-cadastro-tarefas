@@ -41,7 +41,15 @@ public class EditarServlet extends HttpServlet {
 
         request.setAttribute("noticia", noticia_encontrada);
 
-        getServletContext().getRequestDispatcher(url).forward(request,response);
+        if (noticia_encontrada != null) {
+            request.setAttribute("noticia", noticia_encontrada);
+            request.getRequestDispatcher("/editar.jsp").forward(request, response);
+            return;
+        }
+
+
+        // Se não achar, volta para o index
+        response.sendRedirect("index.jsp");
     }
 
     @Override

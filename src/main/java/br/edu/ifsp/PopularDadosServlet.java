@@ -16,13 +16,11 @@ public class PopularDadosServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
 
-        // Verificar se já existem dados
         List<Noticia> listaNoticias = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
         if(listaNoticias == null || listaNoticias.isEmpty()) {
             listaNoticias = new ArrayList<>();
 
-            // Adicionar notícias de exemplo
             listaNoticias.add(new Noticia(
                     "Brasil conquista medalha de ouro nas Olimpíadas",
                     "João Silva",

@@ -8,7 +8,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header bg-primary text-white">
-                    <h3 class="mb-0">Nova Notícia</h3>
+                    <h3 class="mb-0">Editar</h3>
                 </div>
                 <div class="card-body">
                     <form action="cadastrar_noticia" method="POST">
@@ -19,7 +19,7 @@
 
                         <div class="mb-3">
                             <label class="form-label">Autor</label>
-                            <input type="text" class="form-control" name="autor" value="${noticia.autor}" valye required>
+                            <input type="text" class="form-control" name="autor" value="${noticia.autor}" required>
                         </div>
 
                         <div class="mb-3">

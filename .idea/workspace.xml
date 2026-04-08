@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="alterando projeto para cadastro de noticias">
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="CADASTRANDO NOTICIAS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775519124947</updated>
       <workItem from="1775519126088" duration="2283000" />
-      <workItem from="1775597668606" duration="6584000" />
+      <workItem from="1775597668606" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="alterando projeto para cadastro de noticias">
       <option name="closed" value="true" />
@@ -132,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775618063262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CADASTRANDO NOTICIAS">
+      <option name="closed" value="true" />
+      <created>1775619767478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775619767478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CADASTRANDO NOTICIAS">
+      <option name="closed" value="true" />
+      <created>1775619785175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775619785175</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alterando projeto para cadastro de noticias" />
-    <option name="LAST_COMMIT_MESSAGE" value="alterando projeto para cadastro de noticias" />
+    <MESSAGE value="CADASTRANDO NOTICIAS" />
+    <option name="LAST_COMMIT_MESSAGE" value="CADASTRANDO NOTICIAS" />
   </component>
 </project>

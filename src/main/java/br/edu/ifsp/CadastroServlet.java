@@ -13,12 +13,9 @@ import java.util.ArrayList;
 @WebServlet(name = "CadastroServlet", value = "/cadastrar_noticia", loadOnStartup = 0)
 public class CadastroServlet extends HttpServlet {
 
-    //public static List<Noticia> listaNoticias = null;
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // CORRIGIDO: Redirecionar para o formulário em vez de lançar exceção
         request.getRequestDispatcher("/cadastro.jsp").forward(request, response);
     }
 
@@ -26,12 +23,10 @@ public class CadastroServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Obter data atual
         LocalDate hoje = LocalDate.now();
         DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String dataFormatada = hoje.format(formatador);
 
-        // Obter parâmetros do formulário
         String titulo_noticia = request.getParameter("titulo");
         String autor_noticia = request.getParameter("autor");
         String categoria_noticia = request.getParameter("categoria");
@@ -41,7 +36,7 @@ public class CadastroServlet extends HttpServlet {
         String url = null;
         List<String> listaMensagens = new ArrayList<>();
 
-        // Validações
+        // Validações de campos
         if(titulo_noticia == null || titulo_noticia.trim().isEmpty())
             listaMensagens.add("O campo título deve ser preenchido");
 
