@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="CADASTRANDO NOTICIAS">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775519124947</updated>
       <workItem from="1775519126088" duration="2283000" />
-      <workItem from="1775597668606" duration="14744000" />
+      <workItem from="1775597668606" duration="15512000" />
     </task>
     <task id="LOCAL-00001" summary="alterando projeto para cadastro de noticias">
       <option name="closed" value="true" />
@@ -162,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775684084668</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CADASTRANDO NOTICIAS">
+      <option name="closed" value="true" />
+      <created>1775691231242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1775691231242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

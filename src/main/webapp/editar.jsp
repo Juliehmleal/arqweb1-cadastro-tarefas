@@ -11,9 +11,8 @@
                     <h3 class="mb-0">Editar</h3>
                 </div>
                 <div class="card-body">
-                    <input value="${noticia.id}" type="hidden" name="id">
-
                     <form action="editar_noticia" method="POST">
+                        <input value="${noticia.id}" type="hidden" name="id">
                         <div class="mb-3">
                             <label class="form-label">Título</label>
                             <input type="text" class="form-control" name="titulo" value="${noticia.getTitulo()}" required>
