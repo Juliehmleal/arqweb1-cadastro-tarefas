@@ -25,7 +25,7 @@
                                 <h5 class="card-title">${n.titulo}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">${n.categoria}</h6>
                                 <p class="card-text">${n.resumo}</p>
-                                <a href="#" class="btn btn-primary mt-auto">Ler mais</a>
+                                <a href=<c:url value='/ler_noticia?id=${n.id}'/> class="btn btn-primary m-2">Ler Notícia</a>
                                 <a href= <c:url value='/editar_noticia?id=${n.id}'/> class="btn btn-secondary m-2">Editar </a>
                             </div>
                         </div>
