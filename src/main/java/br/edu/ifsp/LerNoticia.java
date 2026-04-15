@@ -6,31 +6,27 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ExcluiServlet", value = "/exclui_noticia")
-public class ExcluiServlet extends HttpServlet {
+@WebServlet(name = "LerNoticia", value = "/ler_noticia")
+public class LerNoticia extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        String url = null;
 
         List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
         for (Noticia j : lista) {
             if (String.valueOf(j.getId()).equals(id)) {
-                lista.remove(j);
+                request.setAttribute("noticia", j);
                 break;
             }
         }
 
-        getServletContext().setAttribute("listaNoticias", lista);
 
-        url = "/index.jsp";
-
-        getServletContext().getRequestDispatcher(url).forward(request,response);
+        request.getRequestDispatcher("/noticia.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String id = request.getParameter("id");
+        // code
     }
 }

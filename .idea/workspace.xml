@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="CADASTRANDO NOTICIAS">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LerNoticia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/noticia.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/ExcluiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/ExcluiServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SERVET File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -67,23 +73,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Smart Tomcat.Tomcat: arqweb1-01.executor": "Run",
-    "git-widget-placeholder": "julie.leal/ajuste__crud",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Tomcat: arqweb1-01.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;julie.leal/deleta__noticia&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat: arqweb1-01" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
@@ -126,6 +132,8 @@
       <updated>1775519124947</updated>
       <workItem from="1775519126088" duration="2283000" />
       <workItem from="1775597668606" duration="15512000" />
+      <workItem from="1776121402010" duration="701000" />
+      <workItem from="1776292422407" duration="2073000" />
     </task>
     <task id="LOCAL-00001" summary="alterando projeto para cadastro de noticias">
       <option name="closed" value="true" />
@@ -230,21 +238,5 @@
     <MESSAGE value="alterando projeto para cadastro de noticias" />
     <MESSAGE value="CADASTRANDO NOTICIAS" />
     <option name="LAST_COMMIT_MESSAGE" value="CADASTRANDO NOTICIAS" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
