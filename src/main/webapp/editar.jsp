@@ -3,7 +3,15 @@
 
 <c:import url="includes/header.jsp"/>
 
+<%
+    if (session.getAttribute("usuario") == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+%>
+
 <div class="container mt-5">
+    <%String usuario = (String) session.getAttribute("usuario");%>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

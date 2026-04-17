@@ -4,6 +4,7 @@
 <c:import url="includes/header.jsp"/>
 
 <div class="container mt-5">
+<%String usuario = (String) session.getAttribute("usuario");%>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -27,10 +28,12 @@
 
                     <div class="d-flex justify-content-center align-items-center">
                         <a href="index.jsp" class="btn btn-secondary m-2 col-5">Voltar</a>
-                        <a class="m-2 col-5 btn btn-danger"
-                           href="<c:url value='/exclui_noticia?id=${noticia.id}'/>">
-                            Excluir
-                        </a>
+                       <% if (usuario != null) { %>
+                           <a class="m-2 col-5 btn btn-danger"
+                              href="<c:url value='/exclui_noticia?id=${noticia.id}'/>">
+                               Excluir
+                           </a>
+                       <% } %>
                     </div>
                 </div>
             </div>

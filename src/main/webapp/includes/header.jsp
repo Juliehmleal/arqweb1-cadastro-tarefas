@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="container">
+      <%String usuario = (String) session.getAttribute("usuario");%>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Portal de Notícias</a>
@@ -23,12 +24,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="cadastro.jsp" >Cadastrar Noticia</a>
-                        </li>
+                        <% if (usuario == null) { %>
+
+                                <!-- NÃO LOGADO -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.jsp">Login</a>
+                                </li>
+
+                            <% } else { %>
+
+                        <!-- LOGADO -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cadastrar_noticia">Cadastrar Noticia</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-danger" href="logout">Sair</a>
+                                </li>
+
+                            <% } %>
                     </ul>
                 </div>
             </div>
