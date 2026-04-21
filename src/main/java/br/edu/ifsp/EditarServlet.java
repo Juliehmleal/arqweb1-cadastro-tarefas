@@ -51,6 +51,7 @@ public class EditarServlet extends HttpServlet {
         String categoria_noticia = request.getParameter("categoria");
         String conteudo_completo = request.getParameter("conteudo_completo");
         String resumo = request.getParameter("resumo");
+        String imagem = "imagens/padrao.jpg";
         String url = null;
 
 
@@ -75,7 +76,7 @@ public class EditarServlet extends HttpServlet {
             url = "/cadastro.jsp";
             request.setAttribute("lista_mensagens", listaMensagens);
         }else{
-            Noticia t = new Noticia(titulo_noticia,autor_noticia, categoria_noticia, conteudo_completo, resumo, dataFormatada);
+            Noticia t = new Noticia(titulo_noticia,autor_noticia, categoria_noticia, conteudo_completo, resumo, dataFormatada, imagem);
 
             lista.add(t);
             getServletContext().setAttribute("listaNoticias", lista);

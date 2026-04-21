@@ -11,45 +11,66 @@
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
 <body>
     <div class="container">
       <%String usuario = (String) session.getAttribute("usuario");%>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Portal de Notícias</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/imagens/portal.png"
+                                                                                                     alt="Portal de Notícias"
+                                                                                                     height="60"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto">
                         <% if (usuario == null) { %>
 
                                 <!-- NÃO LOGADO -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="login.jsp">Login</a>
+                                    <a class="nav-link" href="index.jsp">Home</a>
                                 </li>
+
 
                             <% } else { %>
 
                         <!-- LOGADO -->
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.jsp">Home</a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="cadastrar_noticia">Cadastrar Noticia</a>
                                 </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link text-danger" href="logout">Sair</a>
-                                </li>
-
                             <% } %>
-
-                            <form class="d-flex" action="${pageContext.request.contextPath}/buscar" method="get">
-                                    <input class="form-control me-2" type="search" name="q"
-                                           placeholder="Buscar notícias..." required>
-                                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                                </form>
                     </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <form class="d-flex m-0" action="${pageContext.request.contextPath}/buscar" method="get">
+                            <input class="form-control" type="search" name="q" placeholder="Buscar notícias...">
+
+                        </form>
+
+
+                        <% if (usuario == null) { %>
+
+                            <a href="login.jsp" class="btn btn-outline-primary">Login</a>
+
+                        <% } else { %>
+
+                            <span class="btn btn-outline-success">
+                                <%= usuario %>
+                            </span>
+
+                                <a class="nav-link text-danger" href="logout">Sair</a>
+
+                        <% } %>
+                    </div>
                 </div>
             </div>
         </nav>

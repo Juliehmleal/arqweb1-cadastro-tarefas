@@ -14,10 +14,11 @@ public class Noticia implements Serializable {
     private String resumo;
     private String conteudo_completo;
     private String categoria;
+    private String imagem;
 
     public Noticia () {this.id = ++id_atual;}
 
-    public Noticia(String titulo, String autor, String categoria, String conteudo_completo, String resumo, String data_publicacao) {
+    public Noticia(String titulo, String autor, String categoria, String conteudo_completo, String resumo, String data_publicacao, String imagem) {
         this();
         this.titulo = titulo;
         this.autor = autor;
@@ -25,6 +26,7 @@ public class Noticia implements Serializable {
         this.conteudo_completo = conteudo_completo;
         this.resumo = resumo;
         this.data_publicacao = data_publicacao;
+        this.imagem = imagem;
     }
 
 
@@ -90,5 +92,9 @@ public class Noticia implements Serializable {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+
+    public String getImagem(){
+        return imagem;
     }
 }

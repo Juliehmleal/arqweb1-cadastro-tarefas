@@ -42,8 +42,10 @@
                             <textarea class="form-control" name="conteudo_completo" rows="6" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="listar_noticias" class="btn btn-secondary">Cancelar</a>
+                        <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Salvar</button>
+                        <a href="index.jsp" class="btn btn-secondary">Cancelar</a>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -27,7 +27,8 @@ public class PopularDadosServlet extends HttpServlet {
                     "Esporte",
                     "A seleção brasileira fez uma partida histórica hoje, conquistando a medalha de ouro após uma vitória emocionante. O país inteiro comemorou a conquista que entra para a história do esporte nacional. Os atletas dedicaram a vitória às suas famílias e torcedores.",
                     "Seleção brasileira faz partida histórica e conquista ouro inédito.",
-                    LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                    LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
+                    "imagens/olimpiadas.jpg"
             ));
 
             listaNoticias.add(new Noticia(
@@ -36,7 +37,8 @@ public class PopularDadosServlet extends HttpServlet {
                     "Cultura",
                     "O congresso aprovou hoje a nova lei de incentivo à cultura que promete revolucionar o setor. Serão investidos R$ 500 milhões em projetos culturais em todo o país.",
                     "Lei de incentivo à cultura é aprovada com investimento de R$ 500 milhões.",
-                    LocalDate.now().minusDays(2).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                    LocalDate.now().minusDays(2).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
+                    "imagens/cultura.png"
             ));
 
             listaNoticias.add(new Noticia(
@@ -45,7 +47,8 @@ public class PopularDadosServlet extends HttpServlet {
                     "Tecnologia",
                     "Uma startup brasileira desenvolveu uma tecnologia inovadora que está chamando atenção no mundo todo. A solução promete revolucionar o mercado de energia limpa.",
                     "Tecnologia brasileira é destaque mundial em inovação.",
-                    LocalDate.now().minusDays(5).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                    LocalDate.now().minusDays(5).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
+                    "imagens/start.png"
             ));
 
             getServletContext().setAttribute("listaNoticias", listaNoticias);

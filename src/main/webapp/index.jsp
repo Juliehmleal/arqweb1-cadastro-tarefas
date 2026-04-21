@@ -8,7 +8,7 @@
         <c:when test="${listaNoticias.size() == 0}">
             <div style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
                 <div style="text-align: center;">
-                    <h2 style="color: #666; font-size: 2rem;">📰 Não tem Notícias</h2>
+                    <h2 style="color: #666; font-size: 2rem;">Não tem Notícias</h2>
                     <p style="color: #999; margin-top: 1rem;">Nenhuma notícia disponível no momento.</p>
                 </div>
             </div>
@@ -20,7 +20,9 @@
                 <c:forEach var="n" items="${listaNoticias}">
                     <div class="col-md-4 mb-4 d-flex align-items-stretch">
                         <div class="card w-100">
-                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="imagem ${n.categoria}">
+                           <img src="${pageContext.request.contextPath}/${n.imagem}"
+                                class="card-img-top"
+                                alt="imagem ${n.categoria}">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">${n.titulo}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">${n.categoria}</h6>

@@ -13,6 +13,7 @@
                 </div>
                 <div class="card-body">
 
+                    <img src="${pageContext.request.contextPath}/${noticia.imagem}" alt="${noticia.titulo}" class="img-fluid mb-3">
                     <p><strong>Autor:</strong> ${noticia.autor}</p>
                     <p><strong>Categoria:</strong> ${noticia.categoria}</p>
 

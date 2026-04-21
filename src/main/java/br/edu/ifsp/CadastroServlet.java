@@ -32,6 +32,7 @@ public class CadastroServlet extends HttpServlet {
         String categoria_noticia = request.getParameter("categoria");
         String conteudo_completo = request.getParameter("conteudo_completo");
         String resumo = request.getParameter("resumo");
+        String imagem = "imagens/padrao.jpg";
 
         String url = null;
         List<String> listaMensagens = new ArrayList<>();
@@ -64,7 +65,8 @@ public class CadastroServlet extends HttpServlet {
                     categoria_noticia,
                     conteudo_completo,
                     resumo,
-                    dataFormatada
+                    dataFormatada,
+                    imagem
             );
 
             // Obter a lista do contexto da aplicação
