@@ -19,7 +19,7 @@ public class BuscaNoticia extends HttpServlet {
         int id_inteiro = Integer.parseInt(id);
 
         String url = null;
-        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("lista");
+        List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
         Noticia noticia_encontrada = null;
 
@@ -43,10 +43,10 @@ public class BuscaNoticia extends HttpServlet {
 
         if(noticia_encontrada != null){
             request.setAttribute("noticia", noticia_encontrada);
-            url = "/editar.jsp";
+            url = "/noticia.jsp";
             System.out.println(url);
         }else{
-            System.out.println("");
+            url = "/erro.jsp";
         }
 
         getServletContext().getRequestDispatcher(url).forward(request,response);

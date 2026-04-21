@@ -43,6 +43,12 @@
                                 </li>
 
                             <% } %>
+
+                            <form class="d-flex" action="${pageContext.request.contextPath}/buscar" method="get">
+                                    <input class="form-control me-2" type="search" name="q"
+                                           placeholder="Buscar notícias..." required>
+                                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                                </form>
                     </ul>
                 </div>
             </div>
