@@ -5,11 +5,12 @@
   Time: 20:23
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/style.css">
 </head>
@@ -28,19 +29,27 @@
                     <ul class="navbar-nav me-auto">
                         <% if (usuario == null) { %>
 
-                                <!-- NÃO LOGADO -->
+                                <!-- Nao logado -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.jsp">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre.jsp">Sobre</a>
                                 </li>
 
 
                             <% } else { %>
 
-                        <!-- LOGADO -->
+                        <!-- Logado no sistema -->
 
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.jsp">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre.jsp">Sobre</a>
                                 </li>
 
                                 <li class="nav-item">

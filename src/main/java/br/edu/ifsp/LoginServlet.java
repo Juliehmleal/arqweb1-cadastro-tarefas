@@ -15,7 +15,6 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String senha = request.getParameter("senha");
 
-        // Simples: aceita qualquer login
         if (email != null && senha != null) {
 
             HttpSession session = request.getSession();

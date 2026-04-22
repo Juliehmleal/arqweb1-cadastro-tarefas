@@ -27,6 +27,9 @@ public class CadastroServlet extends HttpServlet {
         DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String dataFormatada = hoje.format(formatador);
 
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+
         String titulo_noticia = request.getParameter("titulo");
         String autor_noticia = request.getParameter("autor");
         String categoria_noticia = request.getParameter("categoria");

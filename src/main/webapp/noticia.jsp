@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:import url="includes/header.jsp"/>
@@ -27,10 +27,10 @@
                     <h5>Conteúdo</h5>
                     <p>${noticia.conteudo_completo}</p>
 
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="index.jsp" class="btn btn-secondary m-2 col-5">Voltar</a>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="index.jsp" class="btn btn-secondary px-4">Voltar</a>
                        <% if (usuario != null) { %>
-                           <a class="m-2 col-5 btn btn-danger"
+                           <a class="btn btn-danger px-4"
                               href="<c:url value='/exclui_noticia?id=${noticia.id}'/>">
                                Excluir
                            </a>

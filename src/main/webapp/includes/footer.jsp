@@ -42,7 +42,8 @@
                 <div class="col-md-6">
                     <div class="footer-box">
                         <div class="footer-title">📧 Contato</div>
-                        <p class="footer-text">Email: contato@portal.com</p>
+                        <p class="footer-text">Email: julie.hervias@aluno.ifsp.edu.br</p>
+                        <p class="footer-text">Email: miguel.prates@aluno.ifsp.edu.br</p>
                     </div>
                 </div>
 

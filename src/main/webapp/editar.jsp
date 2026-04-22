@@ -48,8 +48,10 @@
                             <textarea class="form-control" name="conteudo_completo" rows="6" required>${noticia.conteudo_completo}</textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="index.jsp" class="btn btn-secondary">Cancelar</a>
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                            <a href="index.jsp" class="btn btn-secondary">Cancelar</a>
+                        </div>
                     </form>
                 </div>
             </div>
