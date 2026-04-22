@@ -1,7 +1,6 @@
 package br.edu.ifsp;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Noticia implements Serializable {
 
@@ -16,9 +15,12 @@ public class Noticia implements Serializable {
     private String categoria;
     private String imagem;
 
-    public Noticia () {this.id = ++id_atual;}
+    public Noticia() {
+        this.id = ++id_atual;
+    }
 
-    public Noticia(String titulo, String autor, String categoria, String conteudo_completo, String resumo, String data_publicacao, String imagem) {
+    public Noticia(String titulo, String autor, String categoria, String conteudo_completo,
+                   String resumo, String data_publicacao, String imagem) {
         this();
         this.titulo = titulo;
         this.autor = autor;
@@ -29,72 +31,39 @@ public class Noticia implements Serializable {
         this.imagem = imagem;
     }
 
-
-    public static int getId_atual() {
-        return id_atual;
-    }
-
-    public static void setId_atual(int id_atual) {
-        Noticia.id_atual = id_atual;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getAutor() {
         return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
     }
 
     public String getData_publicacao() {
         return data_publicacao;
     }
 
-    public void setData_publicacao(String data_publicacao) {
-        this.data_publicacao = data_publicacao;
-    }
-
     public String getResumo() {
         return resumo;
-    }
-
-    public void setResumo(String resumo) {
-        this.resumo = resumo;
     }
 
     public String getConteudo_completo() {
         return conteudo_completo;
     }
 
-    public void setConteudo_completo(String conteudo_completo) {
-        this.conteudo_completo = conteudo_completo;
-    }
-
     public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public String getImagem() {
+        return imagem;
     }
 
-    public String getImagem(){
-        return imagem;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 }

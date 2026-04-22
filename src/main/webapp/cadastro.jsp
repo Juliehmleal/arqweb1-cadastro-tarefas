@@ -11,7 +11,8 @@
                     <h3 class="mb-0">Nova Notícia</h3>
                 </div>
                 <div class="card-body">
-                    <form action="cadastrar_noticia" method="POST">
+
+                    <form action="cadastrar_noticia" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label class="form-label">Título</label>
                             <input type="text" class="form-control" name="titulo" required>
@@ -42,11 +43,17 @@
                             <textarea class="form-control" name="conteudo_completo" rows="6" required></textarea>
                         </div>
 
+                        <div class="mb-3">
+                            <label class="form-label">Imagem</label>
+                            <input type="file" class="form-control" name="imagem" accept="image/*">
+                        </div>
+
                         <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Salvar</button>
-                        <a href="index.jsp" class="btn btn-secondary">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Salvar</button>
+                            <a href="index.jsp" class="btn btn-secondary">Cancelar</a>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
