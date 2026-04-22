@@ -39,3 +39,5 @@
 
 </body>
 </html>
+
+<c:import url="includes/footer.jsp"/>
