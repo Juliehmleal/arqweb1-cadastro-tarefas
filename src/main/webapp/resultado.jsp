@@ -16,7 +16,7 @@
 <!-- HEADER -->
 <jsp:include page="/includes/header.jsp" />
 
-<div class="container mt-4">
+<div class="container mt-4" style="min-height: 70vh";>
 
     <h2>Resultados da busca por: ${termo}</h2>
 

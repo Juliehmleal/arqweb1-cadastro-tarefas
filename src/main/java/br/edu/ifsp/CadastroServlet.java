@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
@@ -21,12 +22,29 @@ public class CadastroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        HttpSession session = request.getSession();
+        String usuario = (String) session.getAttribute("usuario");
+
+        if (usuario == null) {
+            response.sendRedirect("login.jsp");
+            return;
+        }
+
         request.getRequestDispatcher("/cadastro.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        HttpSession session = request.getSession();
+        String usuario = (String) session.getAttribute("usuario");
+
+        if (usuario == null) {
+            response.sendRedirect("login.jsp");
+            return;
+        }
 
         LocalDate hoje = LocalDate.now();
         DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -46,41 +64,48 @@ public class CadastroServlet extends HttpServlet {
         String url;
         List<String> listaMensagens = new ArrayList<>();
 
-        if (titulo_noticia == null || titulo_noticia.trim().isEmpty())
+        if (titulo_noticia == null || titulo_noticia.trim().isEmpty()) {
             listaMensagens.add("O campo título deve ser preenchido");
+        }
 
-        if (autor_noticia == null || autor_noticia.trim().isEmpty())
+        if (autor_noticia == null || autor_noticia.trim().isEmpty()) {
             listaMensagens.add("O campo autor deve ser preenchido");
+        }
 
-        if (categoria_noticia == null || categoria_noticia.trim().isEmpty())
+        if (categoria_noticia == null || categoria_noticia.trim().isEmpty()) {
             listaMensagens.add("O campo categoria deve ser preenchido");
+        }
 
-        if (conteudo_completo == null || conteudo_completo.trim().isEmpty())
+        if (conteudo_completo == null || conteudo_completo.trim().isEmpty()) {
             listaMensagens.add("O campo conteúdo deve ser preenchido");
+        }
 
-        if (resumo == null || resumo.trim().isEmpty())
+        if (resumo == null || resumo.trim().isEmpty()) {
             listaMensagens.add("O campo resumo deve ser preenchido");
+        }
 
-        // Parte do upload
         Part arquivoImagem = request.getPart("imagem");
 
         if (arquivoImagem != null && arquivoImagem.getSize() > 0) {
-            String nomeArquivo = arquivoImagem.getSubmittedFileName();
+            String tipoArquivo = arquivoImagem.getContentType();
 
-            // pasta onde vai salvar
-            String caminhoPasta = getServletContext().getRealPath("/imagens");
-            File pasta = new File(caminhoPasta);
+            if (tipoArquivo != null && tipoArquivo.startsWith("image/")) {
+                String nomeArquivo = arquivoImagem.getSubmittedFileName();
 
-            if (!pasta.exists()) {
-                pasta.mkdir();
+                String caminhoPasta = getServletContext().getRealPath("/imagens");
+                File pasta = new File(caminhoPasta);
+
+                if (!pasta.exists()) {
+                    pasta.mkdir();
+                }
+
+                String nomeFinal = System.currentTimeMillis() + "_" + nomeArquivo;
+                arquivoImagem.write(caminhoPasta + File.separator + nomeFinal);
+
+                imagem = "imagens/" + nomeFinal;
+            } else {
+                listaMensagens.add("O arquivo enviado deve ser uma imagem");
             }
-
-            // evitar nomes repetidos
-            String nomeFinal = System.currentTimeMillis() + "_" + nomeArquivo;
-
-            arquivoImagem.write(caminhoPasta + File.separator + nomeFinal);
-
-            imagem = "imagens/" + nomeFinal;
         }
 
         if (!listaMensagens.isEmpty()) {
@@ -97,7 +122,8 @@ public class CadastroServlet extends HttpServlet {
                     imagem
             );
 
-            List<Noticia> listaNoticias = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
+            List<Noticia> listaNoticias =
+                    (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
             if (listaNoticias == null) {
                 listaNoticias = new ArrayList<>();
@@ -111,6 +137,6 @@ public class CadastroServlet extends HttpServlet {
             url = "/obrigado.jsp";
         }
 
-        getServletContext().getRequestDispatcher(url).forward(request, response);
+        request.getRequestDispatcher(url).forward(request, response);
     }
 }

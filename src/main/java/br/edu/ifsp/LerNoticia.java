@@ -8,25 +8,43 @@ import java.util.List;
 
 @WebServlet(name = "LerNoticia", value = "/ler_noticia")
 public class LerNoticia extends HttpServlet {
+
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
         String id = request.getParameter("id");
 
         List<Noticia> lista = (List<Noticia>) getServletContext().getAttribute("listaNoticias");
 
-        for (Noticia j : lista) {
-            if (String.valueOf(j.getId()).equals(id)) {
-                request.setAttribute("noticia", j);
-                break;
+        Noticia noticia_encontrada = null;
+
+        // Verifica se a lista ta existindo
+        if (lista != null) {
+            for (Noticia j : lista) {
+                if (String.valueOf(j.getId()).equals(id)) {
+                    noticia_encontrada = j;
+                    break;
+                }
             }
         }
 
 
-        request.getRequestDispatcher("/noticia.jsp").forward(request, response);
+        if (noticia_encontrada == null) {
+            request.getRequestDispatcher("/noticia_nao_encontrada.jsp")
+                    .forward(request, response);
+            return;
+        }
+
+
+        request.setAttribute("noticia", noticia_encontrada);
+        request.getRequestDispatcher("/noticia.jsp")
+                .forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // code
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // não precisa usar aqui
     }
 }
