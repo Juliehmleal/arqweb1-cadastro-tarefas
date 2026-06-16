@@ -1,4 +1,4 @@
-package br.edu.ifsp;
+package br.edu.ifsp.model;
 
 import java.io.Serializable;
 
@@ -14,13 +14,14 @@ public class Noticia implements Serializable {
     private String conteudo_completo;
     private String categoria;
     private String imagem;
+    private int visualizacoes;
 
     public Noticia() {
         this.id = ++id_atual;
     }
 
     public Noticia(String titulo, String autor, String categoria, String conteudo_completo,
-                   String resumo, String data_publicacao, String imagem) {
+                   String resumo, String data_publicacao, String imagem, int visualizacoes) {
         this();
         this.titulo = titulo;
         this.autor = autor;
@@ -29,10 +30,15 @@ public class Noticia implements Serializable {
         this.resumo = resumo;
         this.data_publicacao = data_publicacao;
         this.imagem = imagem;
+        this.visualizacoes = visualizacoes;
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitulo() {
@@ -65,5 +71,13 @@ public class Noticia implements Serializable {
 
     public void setImagem(String imagem) {
         this.imagem = imagem;
+    }
+
+    public int getVisualizacoes() {
+        return visualizacoes;
+    }
+
+    public void setVisualizacoes(int visualizacoes) {
+        this.visualizacoes = visualizacoes;
     }
 }

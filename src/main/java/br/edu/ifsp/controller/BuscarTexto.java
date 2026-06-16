@@ -1,4 +1,6 @@
-package br.edu.ifsp;
+package br.edu.ifsp.controller;
+
+import br.edu.ifsp.model.Noticia;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

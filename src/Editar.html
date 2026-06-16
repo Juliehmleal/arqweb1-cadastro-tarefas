@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Notícia</title>
+</head>
+<body>
+
+<h2>Editar Notícia</h2>
+
+<form id="formEditar">
+    <input type="number" name="id" placeholder="ID da notícia" required><br><br>
+    <input type="text" name="titulo" placeholder="Novo título" required><br><br>
+    <input type="text" name="autor" placeholder="Autor" required><br><br>
+    <input type="text" name="categoria" placeholder="Categoria" required><br><br>
+    <textarea name="resumo" placeholder="Resumo" required></textarea><br><br>
+    <textarea name="conteudo_completo" placeholder="Conteúdo completo" required></textarea><br><br>
+    <input type="text" name="imagem" placeholder="imagens/padrao.jpg"><br><br>
+
+    <button type="submit">Editar</button>
+</form>
+
+<pre id="resultado"></pre>
+
+<script>
+    document.getElementById("formEditar").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const dados = new URLSearchParams();
+        dados.append("id", this.id.value);
+        dados.append("titulo", this.titulo.value);
+        dados.append("autor", this.autor.value);
+        dados.append("categoria", this.categoria.value);
+        dados.append("resumo", this.resumo.value);
+        dados.append("conteudo_completo", this.conteudo_completo.value);
+        dados.append("imagem", this.imagem.value);
+
+        const resposta = await fetch("http://localhost:8080/arqweb1-01/editar", {
+            method: "POST",
+            body: dados,
+            credentials: "include"
+        });
+
+        const texto = await resposta.text();
+
+        document.getElementById("resultado").textContent =
+            "Status: " + resposta.status + "\n" + texto;
+    });
+</script>
+
+</body>
+</html>

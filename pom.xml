@@ -39,6 +39,12 @@
       <scope>compile</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.13.1</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>arqweb1-01</finalName>

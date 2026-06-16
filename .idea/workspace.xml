@@ -4,13 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Finalizado!!">
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Finalizado!!!!!!!!">
+      <change afterPath="$PROJECT_DIR$/src/Editar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cadastrar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/excluir.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/InitServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/ListarServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/NoticiaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/NoticiaJSONDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/UsuarioDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/UsuarioJSONDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teste.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LerNoticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LerNoticia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cadastro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cadastro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/erro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/erro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resultado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resultado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/BuscaNoticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/BuscaNoticia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/BuscarTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/BuscarTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/CadastroServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/EditarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/ExcluiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/ExcluiServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LerNoticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LerNoticia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/model/Noticia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SERVET File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -100,6 +119,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\webapp\imagens" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main" />
+      <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\FRONTEND" />
+      <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\BACKEND" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.edu.ifsp.model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat: arqweb1-01" type="com.poratu.idea.plugins.tomcat">
@@ -111,6 +138,9 @@
       <option name="catalinaBase" value="C:\Users\Gabriel\.SmartTomcat\arqweb1-cadastro-tarefas\arqweb1-01" />
       <option name="contextPath" value="/arqweb1-01" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -232,7 +262,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776897201362</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finalizado!!!!!">
+      <option name="closed" value="true" />
+      <created>1776898025299</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776898025299</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finalizado!!!!!!!!">
+      <option name="closed" value="true" />
+      <created>1776898190996</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1776898190996</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,19 +346,21 @@
     <MESSAGE value="Implementação do footer" />
     <MESSAGE value="Finalizado" />
     <MESSAGE value="Finalizado!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizado!!" />
+    <MESSAGE value="Finalizado!!!!!" />
+    <MESSAGE value="Finalizado!!!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado!!!!!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
-          <line>61</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/EditarServlet.java</url>
+          <line>66</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/EditarServlet.java</url>
+          <line>42</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

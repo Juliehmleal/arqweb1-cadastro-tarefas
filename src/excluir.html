@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Notícia</title>
+</head>
+<body>
+
+<h2>Excluir Notícia</h2>
+
+<form id="formExcluir">
+    <input type="number" name="id" placeholder="ID da notícia" required><br><br>
+    <button type="submit">Excluir</button>
+</form>
+
+<pre id="resultado"></pre>
+
+<script>
+    document.getElementById("formExcluir").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const dados = new URLSearchParams();
+        dados.append("id", this.id.value);
+
+        const resposta = await fetch("http://localhost:8080/arqweb1-01/excluir", {
+            method: "POST",
+            body: dados,
+            credentials: "include"
+        });
+
+        const texto = await resposta.text();
+
+        document.getElementById("resultado").textContent =
+            "Status: " + resposta.status + "\n" + texto;
+    });
+</script>
+
+</body>
+</html>
