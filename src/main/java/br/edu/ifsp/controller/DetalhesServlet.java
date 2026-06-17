@@ -44,6 +44,9 @@ public class DetalhesServlet extends HttpServlet {
             return;
         }
 
+        noticia.setVisualizacoes(noticia.getVisualizacoes() + 1);
+        dao.atualizar(noticia);
+
         String json = new Gson().toJson(noticia);
 
         response.getWriter().print(json);

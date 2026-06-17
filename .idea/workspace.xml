@@ -4,26 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Refiz o backend, falta front">
-      <change afterPath="$PROJECT_DIR$/src/frontend/Editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/cadastrar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/detalhes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/cultura.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/esporte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/politica.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/portal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/tecnologia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/sobre.html" afterDir="false" />
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Falta organiza estrutura">
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/cadastrar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/detalhes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/editar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/listar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/assets/sobre.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Editar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cadastrar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/excluir.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Editar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/cadastrar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/cadastrar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/detalhes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/detalhes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/sobre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,25 +88,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Smart Tomcat.Tomcat: arqweb1-01.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Gabriel/IdeaProjects/arqweb1-cadastro-tarefas/src/imagens",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Tomcat: arqweb1-01.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel/IdeaProjects/arqweb1-cadastro-tarefas/src/imagens&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\imagens" />
@@ -280,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781596692229</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Falta organiza estrutura">
+      <option name="closed" value="true" />
+      <created>1781690098919</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1781690098919</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +356,8 @@
     <MESSAGE value="Finalizado!!!!!" />
     <MESSAGE value="Finalizado!!!!!!!!" />
     <MESSAGE value="Refiz o backend, falta front" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refiz o backend, falta front" />
+    <MESSAGE value="Falta organiza estrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Falta organiza estrutura" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

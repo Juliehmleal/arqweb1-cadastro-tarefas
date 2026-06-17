@@ -1,0 +1,162 @@
+
+const API = "http://localhost:8080/arqweb1-01";
+
+function montarMenu() {
+
+    const logado =
+        sessionStorage.getItem("autenticado") === "true";
+
+    const menu =
+        document.getElementById("menu");
+
+    if(logado){
+
+        menu.innerHTML = `
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html">
+                    Sobre
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cadastrar.html">
+                    Cadastrar Notícia
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-danger"
+                   href="#"
+                   onclick="logout()">
+                    Sair
+                </a>
+            </li>
+        `;
+
+    } else {
+
+        menu.innerHTML = `
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html">
+                    Sobre
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                    Login
+                </a>
+            </li>
+        `;
+    }
+}
+
+async function carregarNoticias() {
+
+    const resposta =
+        await fetch(`${API}/listar`, {
+            credentials: "include"
+        });
+
+    const noticias =
+        await resposta.json();
+
+    const lista =
+        document.getElementById("listaNoticias");
+
+    lista.innerHTML = "";
+
+    if(noticias.length === 0){
+
+        lista.innerHTML = `
+            <div class="text-center mt-5">
+                <h3>Não existem notícias cadastradas.</h3>
+            </div>
+        `;
+
+        return;
+    }
+
+    noticias.forEach(noticia => {
+
+        lista.innerHTML += `
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card h-100 shadow">
+
+                <img
+                    src="${noticia.imagem}"
+                    class="card-img-top"
+                    style="height:220px;object-fit:cover;"
+                >
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        ${noticia.titulo}
+                    </h5>
+
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        ${noticia.categoria}
+                    </h6>
+
+                    <p class="card-text">
+                        ${noticia.resumo}
+                    </p>
+
+                    <div class="mt-auto">
+
+                        <a
+                            href="detalhes.html?id=${noticia.id}"
+                            class="btn btn-primary btn-sm">
+                            Ler
+                        </a>
+
+                        <a
+                            href="editar.html?id=${noticia.id}"
+                            class="btn btn-secondary btn-sm">
+                            Editar
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+    });
+}
+
+async function logout(){
+
+    await fetch(`${API}/logout`,{
+        method:"POST",
+        credentials:"include"
+    });
+
+    sessionStorage.removeItem("autenticado");
+
+    window.location.href =
+        "login.html";
+}
+
+montarMenu();
+carregarNoticias();
+
+
