@@ -110,8 +110,9 @@
         <h3 class="secao-titulo">Tecnologias Utilizadas</h3>
         <ul class="lista-estilizada">
             <li>Java</li>
-            <li>JSP (Java Server Pages)</li>
             <li>Servlets</li>
+            <li>MVC<li>
+            <li>Json<li>
             <li>HTML, CSS e Bootstrap</li>
             <li>Apache Tomcat</li>
         </ul>

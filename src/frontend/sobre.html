@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre - Portal de Notícias</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+
+        .sobre-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .sobre-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .titulo-principal {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #0d6efd;
+            margin-bottom: 20px;
+            border-left: 6px solid #0d6efd;
+            padding-left: 15px;
+        }
+
+        .secao-titulo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .texto {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .lista-estilizada {
+            padding-left: 20px;
+        }
+
+        .lista-estilizada li {
+            margin-bottom: 10px;
+            font-size: 1.02rem;
+            color: #444;
+        }
+
+        .destaque-box {
+            background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .destaque-box h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .rodape-sobre {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="imagens/portal.png" alt="Portal de Notícias" height="60">
+        </a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto" id="menu"></ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container sobre-container">
+    <div class="sobre-card">
+
+        <div class="destaque-box">
+            <h4>Portal de Notícias</h4>
+            <p class="mb-0">
+                Um sistema web desenvolvido para facilitar o cadastro, gerenciamento e visualização de notícias de forma simples e organizada.
+            </p>
+        </div>
+
+        <h2 class="titulo-principal">Sobre o Portal</h2>
+
+        <p class="texto">
+            Este é um portal de notícias desenvolvido com <strong>Java, Servlets, MVC, JSON, HTML, CSS e JavaScript</strong>,
+            com o objetivo de permitir o cadastro, visualização e gerenciamento de notícias.
+        </p>
+
+        <h3 class="secao-titulo">Objetivo</h3>
+        <p class="texto">
+            O sistema tem como principal objetivo facilitar a publicação de notícias de forma prática,
+            permitindo que usuários cadastrem conteúdos, visualizem informações atualizadas
+            e façam o gerenciamento das notícias já existentes.
+        </p>
+
+        <h3 class="secao-titulo">Funcionalidades</h3>
+        <ul class="lista-estilizada">
+            <li>Cadastro de notícias</li>
+            <li>Edição e exclusão de notícias</li>
+            <li>Listagem e detalhamento de notícias</li>
+            <li>Sistema de login e logout</li>
+            <li>Persistência de dados em arquivo JSON</li>
+            <li>Requisições assíncronas usando Fetch API</li>
+        </ul>
+
+        <h3 class="secao-titulo">Tecnologias Utilizadas</h3>
+        <ul class="lista-estilizada">
+            <li>Java</li>
+            <li>Servlets</li>
+            <li>MVC</li>
+            <li>DAO</li>
+            <li>JSON</li>
+            <li>Fetch API</li>
+            <li>HTML, CSS e Bootstrap</li>
+            <li>Apache Tomcat</li>
+        </ul>
+
+        <h3 class="secao-titulo">Desenvolvedores</h3>
+        <p class="texto">
+            Projeto desenvolvido por <strong>Julie Hervias e Miguel Ferreira</strong>,
+            estudantes do curso <strong>Tecnologia de Sistemas para Internet</strong>.
+        </p>
+
+        <div class="rodape-sobre">
+            © 2026 - Portal de Notícias.
+        </div>
+
+    </div>
+</div>
+
+<footer class="mt-5 bg-dark text-white">
+    <div class="container py-4">
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="bg-black rounded p-4 h-100">
+                    <h5>📧 Contato</h5>
+                    <p class="text-white-50 mb-1">Email: julie.hervias@aluno.ifsp.edu.br</p>
+                    <p class="text-white-50 mb-0">Email: miguel.prates@aluno.ifsp.edu.br</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="bg-black rounded p-4 h-100 text-center">
+                    <h5>© Direitos</h5>
+                    <p class="text-white-50 mb-0">
+                        © 2026 Portal de Notícias<br>
+                        Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    function montarMenu() {
+        const logado = sessionStorage.getItem("autenticado") === "true";
+        const menu = document.getElementById("menu");
+
+        if (logado) {
+            menu.innerHTML = `
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="cadastrar.html">Cadastrar Notícias</a></li>
+                <li class="nav-item"><a class="nav-link" href="listar.html">Notícias</a></li>
+                <li class="nav-item"><a class="nav-link text-danger" href="#" onclick="logout()">Sair</a></li>
+            `;
+        } else {
+            menu.innerHTML = `
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="listar.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            `;
+        }
+    }
+
+    async function logout() {
+        await fetch("http://localhost:8080/arqweb1-01/logout", {
+            method: "POST",
+            credentials: "include"
+        });
+
+        sessionStorage.removeItem("autenticado");
+        window.location.href = "login.html";
+    }
+
+    montarMenu();
+
+    async function logout() {
+        await fetch("http://localhost:8080/arqweb1-01/logout", {
+            method: "POST",
+            credentials: "include"
+        });
+
+        sessionStorage.removeItem("autenticado");
+        window.location.href = "login.html";
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

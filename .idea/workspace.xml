@@ -4,31 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Finalizado!!!!!!!!">
-      <change afterPath="$PROJECT_DIR$/src/Editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cadastrar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/excluir.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/InitServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/ListarServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/NoticiaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/NoticiaJSONDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/UsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/dao/UsuarioJSONDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/teste.html" afterDir="false" />
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Refiz o backend, falta front">
+      <change afterPath="$PROJECT_DIR$/src/frontend/Editar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/cadastrar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/detalhes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/cultura.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/esporte.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/politica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/portal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/imagens/tecnologia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/sobre.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/BuscaNoticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/BuscaNoticia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/BuscarTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/BuscarTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/CadastroServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/EditarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/EditarServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/ExcluiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/ExcluiServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LerNoticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LerNoticia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/model/Noticia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/PopularDadosServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Editar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cadastrar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excluir.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sobre.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teste.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,30 +91,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.Tomcat: arqweb1-01.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel/IdeaProjects/arqweb1-cadastro-tarefas/src/main/webapp/imagens&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Smart Tomcat.Tomcat: arqweb1-01.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Gabriel/IdeaProjects/arqweb1-cadastro-tarefas/src/imagens",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\imagens" />
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\webapp\imagens" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\frontend" />
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main" />
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\FRONTEND" />
       <recent name="C:\Users\Gabriel\IdeaProjects\arqweb1-cadastro-tarefas\src\main\BACKEND" />
@@ -138,9 +135,6 @@
       <option name="catalinaBase" value="C:\Users\Gabriel\.SmartTomcat\arqweb1-cadastro-tarefas\arqweb1-01" />
       <option name="contextPath" value="/arqweb1-01" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -278,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776898190996</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refiz o backend, falta front">
+      <option name="closed" value="true" />
+      <created>1781596692229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1781596692229</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +350,8 @@
     <MESSAGE value="Finalizado!!" />
     <MESSAGE value="Finalizado!!!!!" />
     <MESSAGE value="Finalizado!!!!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizado!!!!!!!!" />
+    <MESSAGE value="Refiz o backend, falta front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refiz o backend, falta front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
