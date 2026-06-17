@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Falta organiza estrutura">
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/cadastrar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/detalhes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/editar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/listar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/assets/sobre.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/Editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Editar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/cadastrar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/cadastrar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/detalhes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/detalhes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/listar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/sobre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifsp/controller/DetalhesServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e4cfee1-a2fa-4ebb-b070-bf60a4e6b46f" name="Changes" comment="Projeto simples finalizado!!!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -285,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781690098919</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Projeto simples finalizado!!!">
+      <option name="closed" value="true" />
+      <created>1781721812549</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1781721812549</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +348,8 @@
     <MESSAGE value="Finalizado!!!!!!!!" />
     <MESSAGE value="Refiz o backend, falta front" />
     <MESSAGE value="Falta organiza estrutura" />
-    <option name="LAST_COMMIT_MESSAGE" value="Falta organiza estrutura" />
+    <MESSAGE value="Projeto simples finalizado!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Projeto simples finalizado!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
